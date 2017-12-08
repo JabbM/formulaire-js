@@ -10,6 +10,10 @@
   display: none;
 }
 #Form1{
+  display: block;
+}
+#None{
+  display: none;
 }
 #Form2{
   display: none;
@@ -54,10 +58,10 @@
   padding: 0px;
 }
 .col-setting2{
-  padding-left: 20%;
+  padding-left: 10%;
 }
 .row-centre{
-  margin-left: 60px;
+  margin-left: 360px;
 }
 .row-centre2{
   margin-left: 8px;

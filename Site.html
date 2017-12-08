@@ -1,144 +1,44 @@
+
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link type="text/css" rel="stylesheet" href="styleform.css"/>
-  <script type="text/javascript" src="JavaSc.js"></script>
-  <scriptsrc="jquery.js"></script>
-<head>
-</head>
-<body>
-  <div class="container">
-    <div id="None">
-      <H1 class="text-center">Formulaire de soirée</H1>
-      <H3 id="newTitle"class="text-center">Ajout de musiques</H3>
-      <div id="Form1">
-        <div style="border: 1px solid black;width: 500px; margin-left: auto; margin-right: auto; padding-top: 10px; padding-bottom: 10px;">
-          <form class="form-inline centrage">
-            <div class="form-group">
-              <div class="col-md-6">
-                <label for="prénom">Prénom :</label>
-                <input class="form-control" type="text" name"Nom" placeholder="Ex : Toto"/>
-              </div>
-              <div class="col-md-6">
-                <label style="margin-left: 10px" for="Nom">Nom :</label>
-                <input class="form-control" type="text" name="Nom" placeholder="Ex : Dupont"/>
-              </div>
-            </div>
-          </form>
-          <div class="espaceTop text-center">
-            <p>Serez-vous présent ?<br>
-            <input type="radio" id="radio1" class=" radio radioinf" name="présence" value="Présent">
-            <label for="radio1">Présent</label>
-            <input type="radio" id="radio2" class="radio radioinf" name="présence" value="Absent">
-            <label for="radio2">Absent</label>
-            </p>
-          </div>
-          <div class="row row-centre">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="créer" class="control-label">Des titres à proposer ?</label>
-                <div class="col-md-4 col-setting">
-                  <input id="créer" class="btn "type="button" value="Créer une playlist" onclick="verif()"/>
-                </div>
-              </div>
-            </form>
-            <div class="ou">
-              <p>Ou</p>
-            </div>
-            <div class="col-md-6">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="enreg" class="control-label">Enregistrer votre présence</label>
-                  <div class="col-md-4 col-setting2">
-                    <input id="enreg" class="btn btn-default" type="button" value="Enregistrer" onclick="enregistrer()"/>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="JavaScript.js"></script>
+  </html>
+  <body>
+    <div class="Container0">
+      <div class="ContainerMenu0">
+        <img id="logo" src="logo.png" alt="logo">
+        <div class="menu0">
+          <ul>
+            <li>
+              <a href="#">Billets</a>
+              <ul class="SousMenu">
+                <li><a href="#">Réservation</a></li>
+                <li><a href="#">Offres promotionnel</a></li>
+                <li><a href="#">Forfaits annuels</a></li>
+              </ul
+            </li>
+            <li>
+              <a href="#">Hôtel</a>
+              <ul class="SousMenu">
+              <li><a href="#">Nos Hôtels</a></li>
+                <li><a href="#">Réservation</a></li>
+                <li><a href="#">Offre Séjour</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Restauration</a>
+              <ul class="SousMenu">
+                <li><a href="#">Nos Restaurants</a></li>
+                <li><a href="#">Nos Buvettes</a></li>
+              </ul>
+            </li>
+            <li<a href="#">À voir et à faire</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <h2 id="fin">Votre réponse a bien été enregistrée</h2>
-    <div id="Form2">
-      <div class="bordure2">
-        <div class="row row-centre2">
-          <form class="form-inline" id="Song" name="Song">
-            <div class="form-group">
-              <div class="col-md-6">
-                <label for="Artiste">Artiste :</label>
-                <input id="Artiste" type="text" class="form-control" name"Artiste" placeholder="Ex : Lorie"/>
-              </div>
-              <div class="col-md-6">
-                <label for="Titre">Titre :</label>
-                <input id="Titre" type="text"  class="form-control" name"Titre" placeholder="Ex : Ma meilleur amie"/>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="row row-centre3">
-          <div class="form-inline" >
-            <div class="form-group centrage2">
-              <div class="col-sm-6 espace-col">
-                <select id="Horraire" name="horaire" onchange="SelectHorraire()">
-                  <option value="Apéro">Apéro
-                  <option value="Repas">Repas
-                  <option value="Dessert">Dessert
-                  <option value="Après diner">Aprés diner
-                </select>
-              </div>
-              <div class="col-sm-6 espace-col2">
-                <select id="Heure" name="heure">
-                  <option value="22h00">22h00
-                  <option value="23h00">23h00
-                  <option value="00h00">00h00
-                  <option value="01h00">01h00
-                  <option value="02h00">02h00
-                  <option value="03h00">03h00
-                  <option value="04h00">04h00
-                  <option value="05h00">05h00
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row row-centre3">
-          <div class="col-md-6">
-            <input id="Ajouter" class="btn btn-default espaceTop" type="button" name"Ajouter" value="Ajouter" onclick="Ajouter()">
-          </div>
-        </div>
-        <div class="centre4">
-          <form class="form-inline">
-            <div class="form-group">
-              <label class="col-md-9 control-label col-setting" for="Poubelle">Supprimer le dernier titre ajouté :</label>
-              <div class="col-md-1">
-                <input id="Poubelle" class="btn btn-default" type="button" name="Poubelle" value="Supprimer" onclick="Supprimer()">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </form>
-    <div id="stock">
-    </div>
-    <div id="copie" style="display: none">
-      <div class="row centrage3">
-        <form id="newSong" class="form-inline" name="newSong">
-          <div class="form-group">
-            <div class="col-md-6">
-              <label for="Artiste">Artiste :</label>
-              <input id="newArtiste" type="text" class="form-control" name"newArtiste" placeholder="Ex : Lorie"/>
-            </div>
-            <div class="col-md-6">
-              <label for="newTitre">Titre :</label>
-              <input id="newTitre" type="text"  class="form-control" name"Newtitle" placeholder="Ex : Ma meilleur amie"/>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>

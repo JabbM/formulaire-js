@@ -1,11 +1,154 @@
-.ContainerMenu0
-{
+
+.TitreCentre{
+  text-align: center;
+}
+.bordure0{
+  border: 1px solid black;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.formulaire{
+  text-align: center;
+}
+
+.NomPrenom{
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerPresence{
+  text-align: center;
+  margin-top: 20px;
+  line-height: 10px;
+}
+
+.containerRadio{
+  display: flex;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.radio_1{
+  padding-right: 30px;
+}
+
+.radio_2{
+  padding-left: 30px;
+}
+
+#suivant{
+  display: block;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#logo
-{
-  width: 100px;
-  height: 100px;
+.choix2emePage{
+  display: flex;
+  width: 458px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.bouton2emePage{
+  text-align: center;
+}
+
+.ArtisteTitre{
+  display: flex;
+  justify-content: space-around;
+}
+
+.choixHoraire{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.lesHoraires{
+  margin-right: 10px;
+}
+
+.lesHeures{
+  margin-left: 10px;
+}
+
+.bouton3emePage{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bordure1{
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+#newTitle{
+  display: none;
+}
+
+#Form1{
+  display: block;
+}
+
+#None{
+  display: none;
+  width: 458px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Form2{
+  display: none;
+}
+
+#Ajouter{
+}
+
+#fin{
+  display: none;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#Heure{
+  display: none;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.inline{
+  display: inline;
+}
+
+#text2{
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.groupe1{
+  width: 150px;
+}
+
+.bordure2{
+  border: 1px solid black;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

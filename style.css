@@ -89,12 +89,6 @@
   justify-content: space-around;
 }
 
-.bordure1{
-  border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
 #newTitle{
   display: none;
 }
@@ -122,4 +116,10 @@
 
 #Heure{
   display: none;
+}
+
+.conteneur{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }

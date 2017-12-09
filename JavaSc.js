@@ -33,6 +33,7 @@ function enregistrer ()
         {
           if(document.getElementById('Form2').style.display = 'block')
           {
+                document.getElementById('None').style.display = 'none';
                 document.getElementById('Form2').style.display = 'none';
                 document.getElementById('fin').style.display = 'block';
 
